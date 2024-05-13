@@ -15,6 +15,7 @@ predictions = clf.predict(X_test)
 def accuracy(y_true, y_pred):
     accuracy = np.sum(y_true == y_pred) / len(y_true)
     return accuracy
-
+print(X.shape)
+#print(np.random.choice(211,5,replace=False))
 acc = accuracy(y_test, predictions)
 print(acc)
